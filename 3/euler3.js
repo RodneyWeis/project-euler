@@ -2,7 +2,7 @@
 // What is the largest prime factor of the number 600851475143?
 let fs = require('fs')
 
-let filename = 'prime10e6.js'
+let filename = 'prime10e3.js'
 
 function generatePrimes(limit) {
     let arr = []
@@ -25,7 +25,7 @@ function generatePrimes(limit) {
     return primes
 }
 
-let primeList = generatePrimes(1000000)
+let primeList = generatePrimes(1000)
 
 fs.writeFile(filename, primeList, (err) => {
     if (err) throw err;
