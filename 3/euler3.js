@@ -27,7 +27,10 @@ function generatePrimes(limit) {
 
 let primeList = generatePrimes(1000)
 
-fs.writeFile(filename, primeList, (err) => {
+// primeList.toString()
+console.log(primeList)
+
+fs.writeFile(filename, JSON.stringify(primeList), (err) => {
     if (err) throw err;
     console.log('File ', filename, ' has been saved')
 })
