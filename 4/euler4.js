@@ -8,7 +8,6 @@
 */
 
 let largestPalindrome = 0
-let largestFactors = {}
 
 function isPalindrome(value) {
     let reversedValue = value.split('').reverse().join('')
@@ -25,7 +24,6 @@ function calculate() {
             if (isPalindrome(product.toString())) {
                 if (product > largestPalindrome) {
                     largestPalindrome = product
-                    console.log('largest is now ' + largestPalindrome)
                 }
             }
         }
